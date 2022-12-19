@@ -24,4 +24,5 @@ void main() {
   String? taeeon = "taeeon";
   taeeon = null;
   if (taeeon != null) print(taeeon.length);
+  taeeon?.isEmpty; // * javascript의 optional chainning 같은 역할이다
 }
