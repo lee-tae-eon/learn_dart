@@ -17,4 +17,11 @@ void main() {
   // * dynamic type을 이용시 해당 타입에 대한 method를 이용하려면 type check가 이루어져야 한다.
   // * dynamic 이 사용되는 것은 권장되지는 않는다. 꼭 필요한 경우에만 쓸것.
   if (name2 is String) {}
+
+  // ------------- null safety ------------------------------
+  // * null safety 란 개발자가 null 값을 참조할 수 없도록 하는 것
+  // * 변수 선언시 nullable 표시는 => ? 를 표기해주면 된다.
+  String? taeeon = "taeeon";
+  taeeon = null;
+  if (taeeon != null) print(taeeon.length);
 }
