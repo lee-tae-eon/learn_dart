@@ -15,5 +15,6 @@ void main() {
   // ------------- dynamic type -------------------------------
   dynamic name2;
   // * dynamic type을 이용시 해당 타입에 대한 method를 이용하려면 type check가 이루어져야 한다.
+  // * dynamic 이 사용되는 것은 권장되지는 않는다. 꼭 필요한 경우에만 쓸것.
   if (name2 is String) {}
 }
