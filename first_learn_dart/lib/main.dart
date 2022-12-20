@@ -31,6 +31,15 @@ void main() {
   final String name3 = "te";
 
   // ------------- late modifier -----------------------
-  // * late는 초기에 데이터 없이 변수 선언이 가능하다. - 변수를 undefined로 참조하도록?
+  // * final을 쓸때 late는  초기에 데이터 없이 변수 선언이 가능하다. - 변수를 undefined로 참조하도록?
   late final String name4;
+  // do something, after fetch api
+  // * 어떤 데이터를 받아오거나 로직 후에 넣어줘야 하는 경우에 선언 후에 참조하도록 변경해주고 한번 값을 참조한 이후로는 변경이 불가능하다.
+  name4 = "data";
+
+  late String name5;
+  name5 = "test";
+  print(name5);
+  name5 = "test2";
+  print(name5);
 }
