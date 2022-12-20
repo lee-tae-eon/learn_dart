@@ -28,5 +28,9 @@ void main() {
 
   // ------------- final variables -------------------
   // * var 대신 final로 변수를 만들게 되면 수정 불가능하다 javascript의 const와 같음
-  final name3 = "te";
+  final String name3 = "te";
+
+  // ------------- late modifier -----------------------
+  // * late는 초기에 데이터 없이 변수 선언이 가능하다. - 변수를 undefined로 참조하도록?
+  late final String name4;
 }
