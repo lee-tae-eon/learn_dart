@@ -25,4 +25,7 @@ void main() {
   taeeon = null;
   if (taeeon != null) print(taeeon.length);
   taeeon?.isEmpty; // * javascript의 optional chainning 같은 역할이다
+
+  // ------------- final variables -------------------
+  // * var 대신 final로 변수를 만들게 되면 수정 불가능하다 javascript의 const와 같음
 }
