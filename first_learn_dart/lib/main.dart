@@ -27,7 +27,7 @@ void main() {
   taeeon?.isEmpty; // * javascript의 optional chainning 같은 역할이다
 
   // ------------- final variables -------------------
-  // * var 대신 final로 변수를 만들게 되면 수정 불가능하다 javascript의 const와 같음
+  // * var 대신 final로 변수를 만들게 되면 수정 불가능하다 javascript의 const와 비슷하다
   final String name3 = "te";
 
   // ------------- late modifier -----------------------
@@ -42,4 +42,13 @@ void main() {
   print(name5);
   name5 = "test2";
   print(name5);
+
+  // -------------- constant variables-------------------
+  // * const keyword는 javascript의 const와 다른 역할을 한다. javascript의 const 는 dart에서 final과 비슷한 역할이다.
+  // * dart에서 const keyword는 compile-time constanst이다. !!
+  const api = "something api fetch response";
+  // * names = "taeeon"; not allow but should be known at compile-time
+  // * 예를 들어 api fetch response를 받는 변수라면 compile time 에서는 알 수 없다 runtime에서 실행 될때 알 수 있다.
+  // * api 에서 가져오는 값은 const가 아닌 final 이 되어야 한다.
+  // * const로 선언한 변수는 컴파일 할때 이미 알고 있어야 하는 값이어야 한다.
 }
