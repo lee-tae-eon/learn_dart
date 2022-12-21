@@ -51,4 +51,5 @@ void main() {
   // * 예를 들어 api fetch response를 받는 변수라면 compile time 에서는 알 수 없다 runtime에서 실행 될때 알 수 있다.
   // * api 에서 가져오는 값은 const가 아닌 final 이 되어야 한다.
   // * const로 선언한 변수는 컴파일 할때 이미 알고 있어야 하는 값이어야 한다.
+  // * 만약 런타임에서 유저가 주는 input같은 경우 const는 실행 할 수 없다. final or var 가 되어야 함.
 }
