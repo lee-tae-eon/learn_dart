@@ -29,4 +29,18 @@ void main() {
   print(numbers);
   giveMeFive = false;
   print(numbers);
+
+  // String interpolation - text에 변수 추가하기.
+  //* javascript에 template literal과 비슷한 역할이다. "$" 뒤에 변수를 추가해주면 된다.
+  // * 이미 변수에 값이 존재할때 가능.
+  // * 해당 변수만 사용할때는 그냥 $변수명 이지만 opreation이 필요하거나  변형을 할때는  ${}로 감싸준다.
+  String text = "test";
+  var ages = 20;
+  var greeting = "hello every one, my name is $text, i am ${ages + 2}";
+  print(greeting);
+
+  // ----- collection for -------------------------
+  var oldMan = ["test", "test2", "test3"];
+  var newMan = ["123", "345", "648", for (var friend in oldMan) "love $friend"];
+  print(newMan);
 }
