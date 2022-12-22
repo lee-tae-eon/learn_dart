@@ -11,7 +11,22 @@ void main() {
 
   // List type ------------------------
 
-  List<int> numbers = [1, 2, 3, 4, 5];
-  numbers.add(1);
+  // List<int> numbers = [1, 2, 3, 4, 5];
+  // numbers.add(1);
+  // print(numbers);
+  // for (var element in numbers) {
+  //   print(element);
+  // }
+  var giveMeFive = true;
+  var numbers = [
+    1,
+    2,
+    3,
+    4,
+    if (giveMeFive) 5,
+  ];
+  // * collection if - 조건에 따라 list에 넣거나 빼거나 가능;
+  print(numbers);
+  giveMeFive = false;
   print(numbers);
 }
