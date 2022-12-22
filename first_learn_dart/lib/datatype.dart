@@ -10,4 +10,8 @@ void main() {
   num x = 12;
 
   // List type ------------------------
+
+  List<int> numbers = [1, 2, 3, 4, 5];
+  numbers.add(1);
+  print(numbers);
 }
