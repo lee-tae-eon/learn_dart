@@ -69,4 +69,9 @@ void main() {
       "name": "name",
     }
   ];
+
+  // --------- Sets -------------------------
+  // * Map과의 차이는 모든 attr이 unique
+  Set<int> numbersSet = {1, 2, 3, 4};
+  print(numbersSet);
 }
