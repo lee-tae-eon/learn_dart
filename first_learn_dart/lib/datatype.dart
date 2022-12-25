@@ -43,4 +43,30 @@ void main() {
   var oldMan = ["test", "test2", "test3"];
   var newMan = ["123", "345", "648", for (var friend in oldMan) "love $friend"];
   print(newMan);
+
+  // ----------- Maps --------------
+  // * javscript의 object , python의  dictionary
+  // * 아래 player를 보면 type을 보면 Map<String, Object> 로 되어있는데
+  // * Map 구조에 String key값에, Object의 value
+  // * 여기서 Object란 dart는 기본적으로 객체로 이루어져 있다
+  // * 그래서 어떤 타입이든 객체로 만들어져 있으므로 Object타입이라 하면 typescript의 any타입이라 생각 할 수 잇다.
+  var player = {"name": "taeeon", "xp": 19, "power": false};
+  print(player);
+  // * 직접 지정하기
+  Map<int, bool> newPlayer = {
+    1: false,
+    2: true,
+    3: false,
+  };
+  print(newPlayer);
+
+  Map<List<int>, bool> listPlayer = {
+    [1, 2, 3]: true,
+  };
+  print(listPlayer);
+  List<Map<String, Object>> newsPlayer = [
+    {
+      "name": "name",
+    }
+  ];
 }
