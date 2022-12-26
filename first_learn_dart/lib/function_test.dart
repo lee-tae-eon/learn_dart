@@ -7,8 +7,10 @@
 // String sayHello(String name) => name;
 
 // * named parameter
-// * nullable or default value 지정
-String sayHi({String name = "", int age = 0, String country = "korea"}) {
+// * required or default value 지정
+// String sayHi({String name = "", int age = 0, String country = "korea"}) {
+String sayHi(
+    {required String name, required int age, required String country}) {
   return "hello $name, are you $age? and from $country ?";
 }
 
