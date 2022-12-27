@@ -14,9 +14,18 @@ String sayHi(
   return "hello $name, are you $age? and from $country ?";
 }
 
+// * optional parameters
+String sayHello(String name, int age, String country) {
+  return "Hello $name $age $country";
+}
+
 void main() {
   var test = sayHi(age: 12, name: "lee", country: "korea");
   print(test);
   // ---------- named parameters
   // * dart function은 named parameter 를 provide > flutter
+
+  // ------------- optional parameters
+  // * 순서에 맞게 입력
+  sayHello("test", 23, "korea");
 }
