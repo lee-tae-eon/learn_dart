@@ -19,6 +19,9 @@ String sayHello(String name, int age, [String? country = ""]) {
   return "Hello $name $age $country";
 }
 
+// * ?? = nullish operator and ??= operator
+String capitalizeName(String? name) => name?.toUpperCase() ?? "anon";
+
 void main() {
   var test = sayHi(age: 12, name: "lee", country: "korea");
   print(test);
@@ -29,4 +32,10 @@ void main() {
   // * 순서에 맞게 입력
   // * parameter 를 []로 감싸서 선언
   print(sayHello("optional", 23));
+
+  // ------------ double question mark operator < ?? > and question equal mark operator < ?= >
+  capitalizeName("operator");
+  String? name;
+  // * name 이 null이면 오른쪽 피연산자 를 할당한다.
+  name ??= "nico";
 }
