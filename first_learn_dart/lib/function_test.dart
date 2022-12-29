@@ -15,7 +15,7 @@ String sayHi(
 }
 
 // * optional parameters
-String sayHello(String name, int age, [String? country = "korea"]) {
+String sayHello(String name, int age, [String? country = ""]) {
   return "Hello $name $age $country";
 }
 
@@ -27,5 +27,6 @@ void main() {
 
   // ------------- optional parameters
   // * 순서에 맞게 입력
-  sayHello("test", 23);
+  // * parameter 를 []로 감싸서 선언
+  print(sayHello("optional", 23));
 }
