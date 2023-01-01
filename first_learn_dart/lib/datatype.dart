@@ -8,7 +8,7 @@ void main() {
   double money = 33.33;
   // * num type은 integer 또는 double 타입 일 수 있다.
   num x = 12;
-
+  print("$name, $alive, $age, $money, $x");
   // List type ------------------------
 
   // List<int> numbers = [1, 2, 3, 4, 5];
