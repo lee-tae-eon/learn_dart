@@ -22,6 +22,20 @@ String sayHello(String name, int age, [String? country = ""]) {
 // * ?? = nullish operator and ??= operator
 String capitalizeName(String? name) => name?.toUpperCase() ?? "anon";
 
+// * Typedef 타입 정의
+typedef ListOfInts = List<int>;
+
+ListOfInts reverseListOfNumbers(ListOfInts list) {
+  var reversed = list.reversed;
+  return reversed.toList();
+}
+
+typedef UserInfo = Map<String, String>;
+
+String sayHi2(UserInfo userInfo) {
+  return "hi ${userInfo['name']}";
+}
+
 void main() {
   var test = sayHi(age: 12, name: "lee", country: "korea");
   print(test);
@@ -38,4 +52,9 @@ void main() {
   String? name;
   // * name 이 null이면 오른쪽 피연산자 를 할당한다.
   name ??= "nico";
+
+  // ---------------- Typedef
+  // * 자료형이 헷갈리 때 도움이 되는 alias를 만드는 방법
+  print(reverseListOfNumbers([1, 2, 3]));
+  print(sayHi2({"name": "nico"}));
 }
