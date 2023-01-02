@@ -9,7 +9,7 @@
       "cwd": "first_learn_dart",
       "request": "launch",
       "type": "dart",
-      "program": "lib/firstClass.dart"
+      "program": "lib/first_class.dart"
     }
   ]
 }
