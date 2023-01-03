@@ -1,7 +1,14 @@
 // class에서 변수를 선언할 때는 type을 지정해야한다.
 class Player {
-  final String name = "taeeon";
-  int xp = 1500;
+  // * late로 초기 변수 없이 생성
+  late String name;
+  late int xp;
+  // * constructor 생성 -
+  // * constructor 는 class의 이름과 같아야 한다.
+  Player(String name, int xp) {
+    this.name = name;
+    this.xp = xp;
+  }
 
   void sayHello() {
     // *안에 선언한 변수를 바로 쓸 수 있다 this를 써도 무방하지만 class method 내에서의 this는 사용하지 않는 것을 권고한다.
@@ -12,8 +19,5 @@ class Player {
 
 void main() {
   // * new를 써도 되지만 안써도 무방하다.
-  var player = Player();
-
-  print(player.name);
-  player.sayHello();
+  var player = Player("taeeon", 39);
 }
