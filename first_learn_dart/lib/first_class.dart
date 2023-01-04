@@ -5,6 +5,9 @@ class Player {
   // late int xp;
   final String name;
   int xp;
+  String team;
+  int age;
+
   // * constructor 생성 -
   // * constructor 는 class의 이름과 같아야 한다.
   // * https://dart-lang.github.io/linter/lints/prefer_initializing_formals.html
@@ -13,7 +16,13 @@ class Player {
   // * this.name = name;
   // * this.xp = xp;
   // * };
-  Player(this.name, this.xp);
+
+  // * named argument constructor
+  Player(
+      {required this.name,
+      required this.xp,
+      required this.team,
+      required this.age});
 
   void sayHello() {
     // *안에 선언한 변수를 바로 쓸 수 있다 this를 써도 무방하지만 class method 내에서의 this는 사용하지 않는 것을 권고한다.
@@ -24,8 +33,10 @@ class Player {
 
 void main() {
   // * new를 써도 되지만 안써도 무방하다.
-  var player = Player("taeeon", 39);
+  var player = Player(name: "taeeon", xp: 39, team: "red", age: 12);
   player.sayHello();
-  var player2 = Player("woo", 36);
+  var player2 = Player(name: "woo", xp: 36, team: "blue", age: 32);
   player2.sayHello();
+
+  // -------------------------- named constructor parameters
 }
