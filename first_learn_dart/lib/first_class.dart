@@ -83,7 +83,10 @@ void main() {
       "xp": 0,
     }
   ];
-
+  // apiData.forEach((playerJson) {
+  //   var player = Player.fromJson(playerJson);
+  //   player.sayHello();
+  // });
   for (var playerJson in apiData) {
     var player = Player.fromJson(playerJson);
     player.sayHello();
