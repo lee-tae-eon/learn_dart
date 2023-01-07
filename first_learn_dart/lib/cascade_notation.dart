@@ -1,7 +1,6 @@
 class Player {
-  final String name;
+  String name, team;
   int xp;
-  String team;
 
   Player({required this.name, required this.xp, required this.team});
 
@@ -10,4 +9,13 @@ class Player {
   }
 }
 
-void main() {}
+void main() {
+  // cascade notation operator
+  var taeeon = Player(name: "taeeon", xp: 13, team: "woo team")
+    ..name = "woo"
+    ..xp = 23
+    ..team = "3333"
+    ..sayhello();
+
+  taeeon.sayhello();
+}
